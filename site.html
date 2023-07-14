@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+<title>SIT120 - Week 1</title>
+<style>
+    /* Internal CSS goes here */
+    /* CSS applying to the webpage, changing the font, font size, text colour, and the page background */
+    body {
+        font-family: 'Open Sans', san-serif;
+        font-size: 20px;
+        background-color: #20232E;
+        color: white;
+    }
+    /* CSS applying to the three headers used on the page */
+    h1,
+    h3 {
+        font-family: 'Lucida Handwriting', cursive;
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<!-- Task Requires : Image x, Table x, Form x, +2 other main HTML tags xx -->
+<!-- Task Requires : inline css x, internal css (style) x, external css (.css) x -->
+<!-- Task Requires : Demonstration Video, link = "" -->
+<!-- Page header, including a font-size change -->
+<h1 style="font-size: 36px;">SIT120 Week 1 - Isaac McKissack</h1>
+<!-- Image linked from my github profile picture, including alt text -->
+<img src="https://avatars.githubusercontent.com/u/79748378?v=4" alt="Photo of site author in a suit with a cardboard sword over their shoulder">
+<p>This is a webpage made for the 1.1P task in SIT120, demonstrating basic HTML and CSS</p>
+<h3>Introducing Me!</h3>
+<!-- A 5 column table with a header and body row -->
+<table>
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Pronouns</td>
+            <td>Age</td>
+            <td>Major</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Isaac</td>
+            <td>McKissack</td>
+            <td>They/Them</td>
+            <td>24</td>
+            <td>Application Development</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!-- Form consisting of  -->
+<form style="border: 2px solid red; padding: 5px 5px 20px 20px;">
+    <h3>Tell me about yourself!</h3>
+    <!-- Text fields for first and last names -->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+    <p>Pronouns:</p>
+    <!-- Checkboxes for the three most common pronoun sets, and a text field for a custom set -->
+    <input type="checkbox" id="pronoun1" value="she">
+    <label for="pronoun1">She/Her</label><br>
+    <input type="checkbox" id="pronoun2" value="him">
+    <label for="pronoun2">He/Him</label><br>
+    <input type="checkbox" id="pronoun3" value="they">
+    <label for="pronoun3">They/Them</label><br>
+    <label for="pronouncustom">Other pronouns:</label><br>
+    <input type="text" id="pronouncustom" name="pronouncustom">
+    <br><br>
+    <!-- Submission Button -->
+    <input type="submit" value="Submit"><br>
+  </form> 
+</body>
+</html> 

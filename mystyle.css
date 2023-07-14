@@ -1,0 +1,20 @@
+/* External CSS goes here */
+/* Changing the text color, and adding a border to tables */
+table {
+    color: black;
+    border: 2px solid red;
+}
+/* Changing background color + font for the header row */
+thead {
+    background: peachpuff;
+    font-family: 'Lucida Handwriting', decorative;
+}
+/* Changing background colour for body row */
+tbody {
+    background: white;
+}
+/* Adding padding and a border to all table sections */
+td {
+    padding: 10px;
+    border: 2px solid red;
+}
