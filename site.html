@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Links to external stylesheet -->
     <link rel="stylesheet" href="mystyle.css">
-<title>SIT120 - Week 1</title>
+    <title>SIT120 - Week 1</title>
 <style>
     /* Internal CSS goes here */
-    /* CSS applying to the webpage, changing the font, font size, text colour, and the page background */
+    /* CSS applying to this webpage, changing the font, font size, text colour, the page background, and padding */
     body {
         font-family: 'Open Sans', san-serif;
         font-size: 20px;
         background-color: #20232E;
         color: white;
+        padding: 0px 20px 20px 20px;
     }
-    /* CSS applying to the three headers used on the page */
+    /* CSS applying to the three headers used on this page, changing font + adding an underline */
     h1,
     h3 {
         font-family: 'Lucida Handwriting', cursive;
         text-decoration: underline;
+    }
+    /* Make img 200x200px and float right */
+    img {
+        width: 200px;
+        height: 200px;
+        float: right;
     }
 </style>
 </head>
@@ -28,9 +36,9 @@
 <h1 style="font-size: 36px;">SIT120 Week 1 - Isaac McKissack</h1>
 <!-- Image linked from my github profile picture, including alt text -->
 <img src="https://avatars.githubusercontent.com/u/79748378?v=4" alt="Photo of site author in a suit with a cardboard sword over their shoulder">
-<p>This is a webpage made for the 1.1P task in SIT120, demonstrating basic HTML and CSS</p>
+<p>This is a webpage made for the 1.1P task in SIT120, demonstrating basic HTML and CSS. It's definitely not pretty, but it's more of a playground, right?</p>
 <h3>Introducing Me!</h3>
-<!-- A 5 column table with a header and body row -->
+<!-- A 5 column table with a header and body row, with first and last names, pronouns, age, and major -->
 <table>
     <thead>
         <tr>
@@ -52,16 +60,16 @@
     </tbody>
 </table>
 <br>
-<!-- Form consisting of  -->
+<!-- Form consisting of name + pronouns, with a border and padding applied -->
 <form style="border: 2px solid red; padding: 5px 5px 20px 20px;">
     <h3>Tell me about yourself!</h3>
     <!-- Text fields for first and last names -->
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
+    <input type="text" id="lname" name="lname"><br>
     <p>Pronouns:</p>
-    <!-- Checkboxes for the three most common pronoun sets, and a text field for a custom set -->
+    <!-- Checkboxes for the three most common pronoun sets, and a text field for a custom set. Allows any combination -->
     <input type="checkbox" id="pronoun1" value="she">
     <label for="pronoun1">She/Her</label><br>
     <input type="checkbox" id="pronoun2" value="him">
@@ -69,9 +77,14 @@
     <input type="checkbox" id="pronoun3" value="they">
     <label for="pronoun3">They/Them</label><br>
     <label for="pronouncustom">Other pronouns:</label><br>
-    <input type="text" id="pronouncustom" name="pronouncustom">
+    <input type="text" id="pronouncustom" name="pronouncustom"><br>
+    <!-- Text fields for age and major -->
+    <label for="age">Age:</label><br>
+    <input type="text" id="age" name="age"><br>
+    <label for="major">Major:</label><br>
+    <input type="text" id="major" name="major">
     <br><br>
-    <!-- Submission Button -->
+    <!-- Submission Button, not currently exporting a file of the results -->
     <input type="submit" value="Submit"><br>
   </form> 
 </body>
